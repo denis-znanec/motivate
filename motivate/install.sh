@@ -7,7 +7,7 @@ fi
 
 INSTALLDIR="/opt/motivate"
 
-# Create motivate folder
+# Create motivatedir folder
 mkdir -p $INSTALLDIR
 
 # Copy the datafolder and set permissions

@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='motivate',
+    name='motivatedir',
     version='0.2',
     description='A simple script to print random motivational quotes.',
     url='https://github.com/mubaris/motivate',

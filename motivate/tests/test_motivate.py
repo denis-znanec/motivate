@@ -5,7 +5,7 @@ import pytest
 
 
 def test_getlink():
-    assert mt.getlink(__file__) == "C:\\Users\denis\Documents\GitHub\motivate\motivate"
+    assert mt.getlink(__file__) == "C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\motivate_test\\motivate"
 
 def test_motivate(capsys):
     mt.quote("test")
@@ -15,7 +15,7 @@ def test_motivate(capsys):
 def test_motivate2(capsys):
     mt.quote("test3")
     out, err = capsys.readouterr()
-    assert out == '---------------Debug info begins:--------------\n' 'Oops, we met a ValueError.\n' 'Please check this file ' 'C:\\Users\\denis\\Documents\\GitHub\\motivate\\motivate\\test3\\001.json\n' '1. A Possible reason is that there is a redundant comma behind last group of ' 'author/quote in this json file.\n' '   If so, delete that redundant comma, then it will run smoothly.\n' '2. Another possible reason is that there is hard line-break or tab in that ' 'file.\n' "   However JSON don't support that. Please use '\\n' or '\\t'.\n" 'For later actions, I help you wrote this filename to JSON_ERROR_LIST.txt.\n' 'I suggest you to test those json file in this website: jsonlint.com\n' '---------------Debug info ends:--------------\n'
+    assert out == '---------------Debug info begins:--------------\n' 'Oops, we met a ValueError.\n' 'Please check this file ' 'C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\motivate_test\\motivate\\motivate\\test3\\001.json\n' '1. A Possible reason is that there is a redundant comma behind last group of ' 'author/quote in this json file.\n' '   If so, delete that redundant comma, then it will run smoothly.\n' '2. Another possible reason is that there is hard line-break or tab in that ' 'file.\n' "   However JSON don't support that. Please use '\\n' or '\\t'.\n" 'For later actions, I help you wrote this filename to JSON_ERROR_LIST.txt.\n' 'I suggest you to test those json file in this website: jsonlint.com\n' '---------------Debug info ends:--------------\n'
 
 # def test_find_dupes(capsys):
 #     fd.findDupes("test")

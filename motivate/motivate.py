@@ -41,7 +41,7 @@ def quote(data):
         try:
             quotes = json.load(json_data)
         except ValueError:
-            print ("---------------Debug info begins:--------------")
+            print("---------------Debug info begins:--------------")
             print("Oops, we met a ValueError.")
             print("Please check this file "+filename)
             print("1. A Possible reason is that there is a redundant comma behind last group of author/quote in this json file.")

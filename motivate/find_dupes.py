@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import json
 import os
 
@@ -22,4 +20,3 @@ def findDupes(test):
     dupes = sorted([x for x in quotes if x['quote'] in seen or seen.add(x['quote'])], key=lambda x: x['quote'])
 
     print(*dupes, sep='\n')
-
